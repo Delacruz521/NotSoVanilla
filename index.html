@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NotSoVanilla</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="#"><img src="logo.png" alt="Logo" /></a>
+
+    <ul class="menu-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#items">Item</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="menu-toggle">☰</button>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-image"></div>
+    <div class="hero-content">
+        <h1>NotSoVanilla</h1>
+        <p>Play Minecraft your way — Survival, Creative, Adventure & PvP</p>
+        <div class="hero-buttons">
+            <a href="#games" class="btn hero-btn-primary">Explore Games</a>
+            <a href="https://discord.com/channels/932288996149694494/1471495303126323383" class="btn hero-btn-primary">Join Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- CARDS SECTION -->
+<section class="cards-section" id="games">
+
+    <h1>DISCOVER OUR GAMES</h1>
+
+    <div class="card-btx">
+
+        <div class="card">
+            <img src="pvp.png" alt="PVP" />
+            <div class="card__content">
+                <p class="card__title">PVP</p>
+                <p class="card__description">
+                    Fight other players in exciting Minecraft battles.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="survival.jpg" alt="Survival" />
+            <div class="card__content">
+                <p class="card__title">Survival</p>
+                <p class="card__description">
+                    Gather resources and survive the Minecraft world.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="adventure.jpg" alt="Adventure" />
+            <div class="card__content">
+                <p class="card__title">Adventure</p>
+                <p class="card__description">
+                    Explore new worlds and exciting challenges.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="creative.jpg" alt="Creative" />
+            <div class="card__content">
+                <p class="card__title">Creative</p>
+                <p class="card__description">
+                    Build anything you imagine with unlimited blocks.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUCT SECTION (Slider) -->
+<section class="product-section" id="items">
+
+   <h1>SKIN ITEMS</h1>
+
+  <div class="product-slider">
+    <!-- Product 1 -->
+    <div class="product-container">
+      <div class="thumbnails">
+        <img src="skin_front.png" alt="Skin Front" class="thumbnail-img active" onclick="changeImage(this)" />
+        <img src="skin_back.png" alt="Skin Back" class="thumbnail-img" onclick="changeImage(this)" />
+        <img src="skin_side.png" alt="Skin Side" class="thumbnail-img" onclick="changeImage(this)" />
+        <img src="skin_3d.png" alt="Skin 3D" class="thumbnail-img" onclick="changeImage(this)" />
+      </div>
+      <img src="background.jpg" alt="Minecraft Skin" class="main-image" />
+      <div class="product-details">
+        <h2 class="product-title">Red Warrior Skin</h2>
+        <div class="rating" aria-label="4 out of 5 stars">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star empty">&#9733;</span>
+        </div>
+        <p class="description">
+          Equip your character with this fierce Red Warrior skin, perfect for adventures in Minecraft.
+        </p>
+        <div>
+          <span class="price">$3.99</span>
+          <span class="old-price">$7.99</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-container">
+      <div class="thumbnails">
+        <img src="background.jpg" alt="Skin Front" class="thumbnail-img active" onclick="changeImage(this)" />
+        <img src="survival.jpg" alt="Skin Back" class="thumbnail-img" onclick="changeImage(this)" />
+        <img src="creative.jpg" alt="Skin Side" class="thumbnail-img" onclick="changeImage(this)" />
+        <img src="pvp.png" alt="Skin 3D" class="thumbnail-img" onclick="changeImage(this)" />
+      </div>
+      <img src="background.jpg" alt="Minecraft Skin" class="main-image" />
+      <div class="product-details">
+        <h2 class="product-title">Blue Guardian Skin</h2>
+        <div class="rating" aria-label="5 out of 5 stars">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+        <p class="description">
+          Protect your world with this Blue Guardian skin. Stylish and battle-ready for any server.
+        </p>
+        <div>
+          <span class="price">$4.99</span>
+          <span class="old-price">$9.99</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-container">
+      <div class="thumbnails">
+        <img src="background.jpg" alt="Skin Front" class="thumbnail-img active" onclick="changeImage(this)" />
+        <img src="survival.jpg" alt="Skin Back" class="thumbnail-img" onclick="changeImage(this)" />
+        <img src="creative.jpg" alt="Skin Side" class="thumbnail-img" onclick="changeImage(this)" />
+        <img src="pvp.png" alt="Skin 3D" class="thumbnail-img" onclick="changeImage(this)" />
+      </div>
+      <img src="background.jpg" alt="Minecraft Skin" class="main-image" />
+      <div class="product-details">
+        <h2 class="product-title">Blue Guardian Skin</h2>
+        <div class="rating" aria-label="5 out of 5 stars">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+        <p class="description">
+          Protect your world with this Blue Guardian skin. Stylish and battle-ready for any server.
+        </p>
+        <div>
+          <span class="price">$4.99</span>
+          <span class="old-price">$9.99</span>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+
+<h1>CONTACT US</h1>
+
+<form id="contact-form">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn">Send Message</button>
+
+</form>
+
+</section>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
